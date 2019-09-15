@@ -1,22 +1,87 @@
 .jumbotron{
-text-align: center;
-}
-.jumbotron p{
-
-}
-#instruShow{
-    display: none;
-}
-h2#instructions:hover{
-   background-color: aqua;
-   cursor: help;
-}
-img{
-    height: 30px;
-    width: 30px;
-}
-img:hover{
- height: 32px;
- width: 32px;
- cursor: pointer;
-}
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 700; 
+    
+    background-repeat: no-repeat;
+    
+    background-image: linear-gradient(red,blue);
+    background-color: #90BDDF;
+    }
+    .jumbotron h1{
+        font-size: 80px;
+        
+        opacity: 20;
+    }
+    .jumbotron p{
+        font-size: 50px;
+        font-weight: 900;
+    
+    }
+    .playerOne{
+        text-align: center;
+        
+    }
+    #oneCss{
+        background-color: #0F86ED;
+        font-family: 'Neucha', cursive;
+        font-size: 40px;
+    }
+    .playerTwo{
+        text-align: center;
+        
+    }
+    #twoCss{
+        background-color: #ED0F2D;
+        font-family: 'Neucha', cursive;
+        font-size: 40px;
+    }
+    .scores{
+        text-align: center;
+        font-size: 40px;
+        
+    }
+    #scoreCss{
+        background-color:grey;
+        font-family: 'Knewave', cursive;
+    }
+    
+    
+    .ending{
+        display: none;
+        text-align: center;
+    }
+    
+    #instruShow{
+        display: none;
+    }
+    h2#instructions:hover{
+       
+       cursor: help;
+    }
+    .btn#roll-1{
+        color: blue;
+        background-color: blueviolet;  
+    }
+    img{
+        height: 60px;
+        width: 60px;
+    }
+    img:hover{
+        height: 70px;
+        width: 70px;
+    }
+    
+    .btn{
+        font-weight: 700;
+    }
+    .btn:hover{
+     height: 40px;
+     width: 60px;
+     cursor: pointer;
+    }
+    body {
+        background-image: linear-gradient(45deg, #808080 25%, transparent 25%), linear-gradient(-45deg, #808080 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #808080 75%), linear-gradient(-45deg, transparent 75%, #808080 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+      }

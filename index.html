@@ -7,6 +7,7 @@
     <title>Pig Dice</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Knewave|Neucha&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script src="js/underscore-min.js"></script>
@@ -14,10 +15,10 @@
 </head>
 <body>
     <div class="jumbotron">
-    <h1>Pig Dice!!</h1>
+    <h1>Pig Dice!!</h1><br><br>
     <p class="intro">Are you ready for the challenge??</p>
     <h2 class="btn btn primary" id="instructions">Instructions</h2>
-    <ul id="instruShow">
+    <ul id="instruShow" style="list-style-type:none">
         <li>Each turn, a player repeatedly rolls a dice until either a 1 is rolled or the player decides to "hold":</li>
         <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
         <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
@@ -27,45 +28,53 @@
 </div>
 <div class="row">
         <div class="col-md-4">
-    <div class="well well-sm">
+    <div class="well well-sm" id="oneCss">
         <div class="playerOne">
-            <h3>Your Score: </h3><br>
-            <h4><span class="overallScore1"></span></h4>
-            <p><span id="acc1"></span></p>
-             <p><span id="entries1"></span></p>
+            <h3>Your Score: <br><span class="overallScore1"></span></h3><br>
+   
+            <p>Round Total: <br><span id="acc1"></span></p>
+             <p>Entries: <br><span id="entries1"></span></p>
              <p><span id="lost"></span></p>
-             <img src="img/die-button.jpg" id="roll-1" alt="die">
+             
+             <button type="submit" class="btn" id="roll-1">Roll</button>
             &emsp;<button type="submit" class="btn" id="hold-1">Hold</button>
         </div>
     </div>
     </div>
     <div class="col-md-4">
-    <div class="well well-sm">
+    <div class="well well-sm" id="scoreCss">
+        <div class="scores">
         <h3>Scores:</h3>
     
-        <p>Player 1: <span class="overallScore1"></span></p>
-        <p>Player 2: <span class="overallScore2"></span></p>
+        <p>Player 1: <br><span class="overallScore1"></span></p>
+        <p>Player 2: <br><span class="overallScore2"></span></p>
         
         <h5>The goal is: <strong>100</strong></h5>
+        <img src="img/die-button.jpg" alt="die">
             
             
 
-
+    </div>
     </div>
     </div>
 
     <div class="col-md-4">
-    <div class="well well-sm">
+    <div class="well well-sm" id="twoCss">
     <div class="playerTwo">
-        <h3>Your Score: </h3><br>
-        <h4><span class="overallScore2"></span></h4>
-        <p><span id="acc2"></span></p>
-        <p><span id="entries2"></span></p>
-        <img src="img/die-button.jpg" id="roll-2" alt="die">
+        <h3>Your Score: <br><span class="overallScore2"></span></h3><br>
+        
+        <p>Round Total: <br><span id="acc2"></span></p>
+        <p>Entries: <br><span id="entries2"></span></p>
+        <button type="submit" class="btn" id="roll-2">Roll</button>
         &emsp;<button class="btn" id="hold-2" type="submit">Hold</button>
     </div>
 </div>
 </div>
+</div>
+<div class="ending">
+        <h3>Oink!</h3>
+        <h4 class="winner"></h4>
+    
 </div>
 </body>
 </html>
