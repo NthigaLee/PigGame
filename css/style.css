@@ -1,0 +1,22 @@
+.jumbotron{
+text-align: center;
+}
+.jumbotron p{
+
+}
+#instruShow{
+    display: none;
+}
+h2#instructions:hover{
+   background-color: aqua;
+   cursor: help;
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+img:hover{
+ height: 32px;
+ width: 32px;
+ cursor: pointer;
+}
